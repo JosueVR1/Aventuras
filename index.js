@@ -61,6 +61,13 @@ client.on('message', async (message) => {
     message.channel.send('¡Gracias por tu sugerencia!')
   }
   
+  if(message.content.startsWith(prefix + 'Warn')) {
+    message.channel.send('¡Advertencia estas rompiendo una norma!')
+  }
+  
+  if(message.content.startsWith(prefix + 'Reporte')) {
+    message.channel.send('Acabas de abrir un reporte, por favor a continuacion escribe tu nick mas tu reporte.')
+  }
 });
 
 // Iniciamos sesión en Discord
