@@ -33,7 +33,7 @@ client.on('message', async (message) => {
   if(message.author.bot) return;
   
   // Creamos el comando ping
-  if(message.content.startsWith(prefix + 'Ip' 'ip')) {
+  if(message.content.startsWith(prefix + 'Ip')) {
     message.channel.send('mc.aventuras-server.ga')
   }
   
