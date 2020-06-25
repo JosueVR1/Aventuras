@@ -37,6 +37,17 @@ client.on('message', async (message) => {
     message.channel.send('mc.aventuras-server.ga')
   }
   
+  if(message.content.startsWith(prefix + 'Ayuda')) {
+    message.channel.send('Hola, Bienvenido al canal Ayuda, a continuacion escribe tu nick y especifica en que necesitas ayuda.')
+  }
+  
+  if(message.content.startsWith(prefix + 'Soporte')) {
+    message.channel.send('Bienvenido al canal soporte, por favor escribe tu nick mas el asunto del cual necesitas atención. En breve un miembro del area de soporte te ayudara.')
+  }
+  
+  if(message.content.startsWith(prefix + 'Abierto')) {
+    message.channel.send('¡Hola Aventurero! - Nuestro servidor ya se encuentra abierto')
+  }
 });
 
 // Iniciamos sesión en Discord
