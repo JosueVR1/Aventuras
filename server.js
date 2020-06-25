@@ -19,7 +19,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 // Definimos el prefix del bot
-let prefix = "-"
+let prefix = "y>"
 
 // Activamos el evento ready
 client.on('ready', () => {
