@@ -46,8 +46,21 @@ client.on('message', async (message) => {
   }
   
   if(message.content.startsWith(prefix + 'Abierto')) {
-    message.channel.send('¡Hola Aventurero! - Nuestro servidor ya se encuentra abierto')
+    message.channel.send('¡Hola Aventurero! - la espera acabo, nuestro servidor ya se encuentra abierto. @everyone')
   }
+  
+  if(message.content.startsWith(prefix + 'Cerrado')) {
+    message.channel.send('¡Hola Aventurero! - Lamento informarte que nuestro servidor se encuentra en mantenimiento, por favor se paciente que estamos trabajando para seguir mejorando. @everyone')
+  }
+  
+  if(message.content.startsWith(prefix + 'Sugerencia')) {
+    message.channel.send('Acabas de abrir una sugerencia, a continuacion escribe tu nick mas tu sugerencia, no olvides poner -Close al terminar. @everyone')
+  }
+  
+  if(message.content.startsWith(prefix + 'Close')) {
+    message.channel.send('¡Gracias por tu sugerencia!')
+  }
+  
 });
 
 // Iniciamos sesión en Discord
