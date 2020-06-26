@@ -36,7 +36,6 @@ client.on('message', async (message) => {
   if(message.content.startsWith(prefix + 'ip')) {
     message.channel.send('mc.aventuras-server.ga')
   }
-  
   if(message.content.startsWith(prefix + 'Ayuda')) {
     message.channel.send('Hola, Bienvenido al canal Ayuda, a continuacion escribe tu nick y especifica en que necesitas ayuda.')
   }
@@ -89,8 +88,8 @@ client.on('message', async (message) => {
     message.channel.send('¡Hola Aventurero te espera una gran aventura por descubrir!')
   }
   
-     if(message.content.startsWith(prefix + 'Aventuras')) {
-    message.channel.send('Bot oficial de Aventuras-Server, mucho gusto :D')
+     if(message.content.startsWith(prefix + 'Misiones')) {
+    message.channel.send(':pushpin:Reglas para las misiones. 1- Se prohíbe el uso de comandos que te beneficien en la misión. Se prohíbe armar equipos para completar una misión [solo es permitido si la misión lo solicita]. Se prohibe el uso de hacks o ayuda en la elaboración de misiones.Se prohíbe la divulgación de las soluciones a las misiones.Se prohíbe aprovecharse de algún bug.:warning:Recuerda el incumplimiento de estas reglas será motivo de sanción.')
   }
   
   if(message.content.startsWith(prefix + 'Aniversario')) {
