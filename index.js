@@ -80,20 +80,24 @@ client.on('message', async (message) => {
     message.channel.send('Acabas de abrir un reporte, por favor a continuacion escribe tu nick mas tu reporte. @everyone')
   }
   
-   if(message.content.startsWith(prefix + 'Ip')) {
+  if(message.content.startsWith(prefix + 'Ip')) {
     message.channel.send('mc.aventuras-server.ga')
   }
   
-     if(message.content.startsWith(prefix + 'Bienvenido')) {
+  if(message.content.startsWith(prefix + 'Bienvenido')) {
     message.channel.send('¡Hola Aventurero te espera una gran aventura por descubrir!')
   }
   
-     if(message.content.startsWith(prefix + 'Misiones')) {
-    message.channel.send(':pushpin:Reglas para las misiones. 1- Se prohíbe el uso de comandos que te beneficien en la misión. Se prohíbe armar equipos para completar una misión [solo es permitido si la misión lo solicita]. Se prohibe el uso de hacks o ayuda en la elaboración de misiones.Se prohíbe la divulgación de las soluciones a las misiones.Se prohíbe aprovecharse de algún bug.:warning:Recuerda el incumplimiento de estas reglas será motivo de sanción.')
+  if(message.content.startsWith(prefix + 'Discord')) {
+    message.channel.send('https://discord.gg/xuKX9Ce')
   }
   
   if(message.content.startsWith(prefix + 'Aniversario')) {
     message.channel.send(':tada: Servidor creado el 10/05/2020 :tada:')
+  }
+  
+  if(message.content.startsWith(prefix + 'Comandos')) {
+    message.channel.send('Ip, Bienvenido, Aniversario, Reporte, Warn, Close, Abierto, Sugerencia, Soporte, Ayuda')
   }
   
 });
