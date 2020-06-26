@@ -41,7 +41,15 @@ client.on('message', async (message) => {
     message.channel.send('Hola, Bienvenido al canal Ayuda, a continuacion escribe tu nick y especifica en que necesitas ayuda.')
   }
   
+  if(message.content.startsWith(prefix + 'ayuda')) {
+    message.channel.send('Hola, Bienvenido al canal Ayuda, a continuacion escribe tu nick y especifica en que necesitas ayuda.')
+  }
+  
   if(message.content.startsWith(prefix + 'Soporte')) {
+    message.channel.send('Bienvenido al canal soporte, por favor escribe tu nick mas el asunto del cual necesitas atención. En breve un miembro del area de soporte te ayudara.')
+  }
+  
+  if(message.content.startsWith(prefix + 'soporte')) {
     message.channel.send('Bienvenido al canal soporte, por favor escribe tu nick mas el asunto del cual necesitas atención. En breve un miembro del area de soporte te ayudara.')
   }
   
@@ -69,8 +77,24 @@ client.on('message', async (message) => {
     message.channel.send('Acabas de abrir un reporte, por favor a continuacion escribe tu nick mas tu reporte. @everyone')
   }
   
+  if(message.content.startsWith(prefix + 'reporte')) {
+    message.channel.send('Acabas de abrir un reporte, por favor a continuacion escribe tu nick mas tu reporte. @everyone')
+  }
+  
    if(message.content.startsWith(prefix + 'Ip')) {
     message.channel.send('mc.aventuras-server.ga')
+  }
+  
+     if(message.content.startsWith(prefix + 'Bienvenido')) {
+    message.channel.send('¡Hola Aventurero te espera una gran aventura por descubrir!')
+  }
+  
+     if(message.content.startsWith(prefix + 'Aventuras')) {
+    message.channel.send('Bot oficial de Aventuras-Server, mucho gusto :D')
+  }
+  
+  if(message.content.startsWith(prefix + 'Aniversario')) {
+    message.channel.send(':tada: Servidor creado el 10/05/2020 :tada:')
   }
   
 });
