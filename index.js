@@ -97,10 +97,6 @@ client.on('message', async (message) => {
     message.channel.send(':tada: Servidor creado el 10/05/2020 :tada:')
   }
   
-  if(message.content.startsWith(prefix + 'Helpop')) {
-    message.channel.send(':warning: Acabas de solicitar ayuda a los Administradores/Dueños - en breve seras atendido :warning:')
-  }
-  
 });
 
 // Iniciamos sesión en Discord
