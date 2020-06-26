@@ -66,8 +66,13 @@ client.on('message', async (message) => {
   }
   
   if(message.content.startsWith(prefix + 'Reporte')) {
-    message.channel.send('Acabas de abrir un reporte, por favor a continuacion escribe tu nick mas tu reporte.')
+    message.channel.send('Acabas de abrir un reporte, por favor a continuacion escribe tu nick mas tu reporte. @everyone')
   }
+  
+   if(message.content.startsWith(prefix + 'Ip')) {
+    message.channel.send('mc.aventuras-server.ga')
+  }
+  
 });
 
 // Iniciamos sesión en Discord
